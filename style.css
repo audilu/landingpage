@@ -1,9 +1,9 @@
 body {
     font-family: sans-serif;
-    margin: 5%;
+    margin: 3% 10%;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #fefefe;
+    color: #111;
 }
 
 .container {
@@ -12,7 +12,43 @@ body {
     height: 100vh;
 }
 
-h1 {
+.primary-btn {
+    display: inline-block;
+    background-color: #111;
+    color: #fefefe;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.primary-btn:focus,
+.primary-btn:hover,
+.primary-btn:active {
+    background-color: #555;
+}
+
+.muted {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.muted:focus,
+.muted:hover,
+.muted:active {
+    color: #111;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -22,12 +58,69 @@ p {
     margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    h1 {
+img {
+    width: 90%;
+}
+
+nav {
+    background-color: #111;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2rem;
         font-size: 2rem;
     }
 
     p {
         font-size: 1rem;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        flex-direction: row;
+    }
+
+    img {
+        width: 50ch;
+    }
+
+    .display {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        padding-top: 2rem;
     }
 }
