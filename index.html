@@ -16,17 +16,16 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar">
-            <a href="#" class="navbar-brand">audilu</a>
-        </div>
-    </nav>
     <div class="container">
-        <div>
-            <h1>audilu - Die Audiodeskriptions-App</h1>
+        <main>
+            <picture>
+                <source srcset="heading-dark.svg" media="(prefers-color-scheme: dark)">
+                <img src="heading-bright.svg" class="heading-logo center" role="heading" aria-level="1" alt="Audilu">
+            </picture>
             <p>
-                Unsere App hilft dir, mit deinen Worten faszinierende Bilder in den Köpfen deines Publikums
-                zu erschaffen und damit mehr Menschen den Zugang zu deinen Videos zu ermöglichen.
+                Unsere App hilft dir, Audiodeskriptionen für deine Videos zu erstellen. 
+                Damit kannst du spannende Bilder für dein Publikum erschaffen,
+                auch wenn sie diese nicht sehen können. So ermöglichst du allen, deine Filme anzusehen.
             </p>
             <p>
                 Entwickelt von sehbehinderten Personen, die selbst Audiodeskription verwenden,
@@ -39,17 +38,32 @@
             <p>
                 Die Website und die App sind noch in Arbeit, aber folge uns gerne auf Mastodon,
                 um keine Neuigkeiten zu verpassen und um Teil der Audilu-Community zu werden!
-                Auf GitHub kannst du uns bei der Entwicklung unterstützen.<br><br>
-                <a href="https://dresden.network/@AD_project" class="primary-btn">Auf Mastodon folgen</a>
+                Auf GitHub kannst du uns bei der Entwicklung unterstützen.
+            </p>
+            <div>
+                <a href="https://dresden.network/@AD_project" rel="me" class="primary-btn">Auf Mastodon folgen</a>
                 <a href="https://github.com/audilu" class="primary-btn">Auf GitHub mitwirken</a>
-            </p>
-            <a href="legal.html" class="muted">Impressum und Datenschutzerklärung</a>
-            </p>
-        </div>
-        <div class="display">
-            <img src="app-screenshot.png" alt='Ein Smartphone zeigt den Text "Kommt bald" auf seinem Display.'>
-        </div>
+            </div>
+        </main>
+        <img src="app-screenshot.png" class="display" alt='Ein Smartphone zeigt das Audilu-Icon auf dem Startbildschirm.'>
     </div>
+    <footer>
+        <section class="funding">
+            <a href="https://prototypefund.de">
+                <img src="PTF-Funding.png" alt="Gefördert im Rahmen der 13. Runde des Prototype Fund" class="funding-logo">
+            </a>
+            <a href="https://bmbf.de">
+                <img src="BMBF-Funding.jpg" alt="Gefördert vom Bundesministerium für Bildung und Forschung" class="funding-logo">
+            </a>
+        </section><br>
+        <section>
+            <a href="legal.html" class="muted">Impressum und Datenschutzerklärung</a>
+            <span class="muted" aria-hidden="true">•</span>
+            <a href="https://conesible.de/" class="muted">Ein Projekt von Casey Kreer</a>
+            <span class="muted" aria-hidden="true">•</span>
+            <span class="muted">FKZ: 01IS23S15</span>
+        </section>
+    </footer>
 </body>
 
 </html>
